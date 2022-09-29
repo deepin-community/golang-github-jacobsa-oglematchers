@@ -1,0 +1,21 @@
+Source: golang-github-jacobsa-oglematchers
+Section: devel
+Priority: extra
+Maintainer: pkg-go <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Michael Stapelberg <stapelberg@debian.org>, Tim Potter <tpot@hpe.com>
+Build-Depends: debhelper (>= 9), dh-golang, golang-any
+Standards-Version: 3.9.6
+Homepage: https://github.com/jacobsa/oglematchers
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-go/packages/golang-github-jacobsa-oglematchers.git;a=summary
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-jacobsa-oglematchers.git
+XS-Go-Import-Path: github.com/jacobsa/oglematchers
+
+Package: golang-github-jacobsa-oglematchers-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: matchers for testing/mocking frameworks such as ogletest
+ oglematchers is a package for the Go programming language containing a set of
+ matchers, useful in a testing or mocking framework, inspired by and mostly
+ compatible with Google Test for C++ and Google JS Test. The package is used by
+ the ogletest testing framework and oglemock mocking framework, which may be
+ more directly useful to you, but can be generically used elsewhere as well.

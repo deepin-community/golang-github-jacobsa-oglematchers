@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+
+%:
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_auto_test:
+	# TODO(stapelberg): tests are disabled because they require ogletest,
+	# which in turn requires oglematchers. In the future, maybe use
+	# https://wiki.debian.org/DebianBootstrap, so that we can solve this
+	# problem by doing two-staged builds.
